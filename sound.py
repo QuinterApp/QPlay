@@ -3,7 +3,6 @@ import sound_lib
 from sound_lib import stream
 from sound_lib import output as o
 import globals
-import speak
 
 out = o.Output()
 handle = None

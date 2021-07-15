@@ -16,7 +16,6 @@ app = wx.App(redirect=False)
 
 import globals
 globals.load()
-import speak
 import sound
 from GUI import ask, main
 if len(sys.argv)>1:

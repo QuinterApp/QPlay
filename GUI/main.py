@@ -5,7 +5,6 @@ import platform
 import sys
 import application
 import globals
-import speak
 class MainGui(wx.Frame):
 	def __init__(self, title):
 		wx.Frame.__init__(self, None, title=title,size=(800,600))
