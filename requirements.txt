@@ -1,0 +1,7 @@
+sound_lib
+tweak
+nuitka
+git+http://github.com/accessibleapps/accessible_output2
+git+http://github.com/accessibleapps/keyboard_handler
+youtube-dl
+wxpython

@@ -1,0 +1,63 @@
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 17, in <module>
+    from GUI import main
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 5, in <module>
+    import globals
+ModuleNotFoundError: No module named 'globals'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 9, in <module>
+    import globals
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\globals.py", line 4, in <module>
+    from GUI import main
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 7, in <module>
+    class MainGui(wx.Frame):
+NameError: name 'wx' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 21, in <module>
+    main.window.Show()
+AttributeError: module 'GUI.main' has no attribute 'window'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 9, in <module>
+    import globals
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\globals.py", line 4, in <module>
+    from GUI import main
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 37, in <module>
+    window=MainGui(application.name+" "+application.version)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 10, in __init__
+    wx.Frame.__init__(self, None, title=title,size=(800,600))
+wx._core.PyNoAppError: The wx.App object must be created first!
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 9, in <module>
+    import globals
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\globals.py", line 4, in <module>
+    from GUI import main
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 37, in <module>
+    window=MainGui(application.name+" "+application.version)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 10, in __init__
+    wx.Frame.__init__(self, None, title=title,size=(800,600))
+wx._core.PyNoAppError: The wx.App object must be created first!
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 28, in <module>
+    sound.play(urls[0])
+AttributeError: module 'sound' has no attribute 'play'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 55, in play_url
+    player = stream.URLStream(url)
+  File "C:\python39\lib\site-packages\sound_lib\stream.py", line 128, in __init__
+    handle = bass_call(
+  File "C:\python39\lib\site-packages\sound_lib\main.py", line 58, in bass_call
+    res = function(*args)
+ctypes.ArgumentError: argument 1: <class 'TypeError'>: wrong type
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 28, in <module>
+    sound.play_url(urls[0])
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 60, in play_url
+    speak.speak("Error while playing "+url)
+TypeError: can only concatenate str (not "dict") to str
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 28, in <module>
+    a=urls[0]['func']['url'](urls['url'])
+TypeError: 'function' object is not subscriptable
