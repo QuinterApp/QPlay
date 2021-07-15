@@ -131,3 +131,23 @@ Traceback (most recent call last):
     utils.alert("Error while playing "+a,"Error")
 NameError: name 'a' is not defined
 ERROR: This live event will begin in 6 hours.
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 51, in OnVoldown
+    if sound.player!=None:
+NameError: name 'sound' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 51, in OnVoldown
+    if sound.player!=None:
+NameError: name 'sound' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 51, in OnVoldown
+    if sound.player!=None:
+NameError: name 'sound' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 51, in OnVoldown
+    if sound.player!=None:
+NameError: name 'sound' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 51, in OnVoldown
+    if sound.player!=None:
+NameError: name 'sound' is not defined

@@ -1,3 +1,4 @@
+import sound
 import wx
 import os
 import platform
@@ -31,6 +32,8 @@ class MainGui(wx.Frame):
 		self.SetMenuBar(self.menuBar)
 		accel=[]
 		accel.append((wx.ACCEL_ALT, ord('X'), m_close.GetId()))
+		accel.append((wx.ACCEL_NORMAL, wx.WXK_UP, m_volup.GetId()))
+		accel.append((wx.ACCEL_NORMAL, wx.WXK_DOWN, m_voldown.GetId()))
 		accel_tbl=wx.AcceleratorTable(accel)
 		self.SetAcceleratorTable(accel_tbl)
 		self.panel.Layout()
