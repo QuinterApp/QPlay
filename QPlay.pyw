@@ -4,7 +4,7 @@ import platform
 import sys
 sys.dont_write_bytecode=True
 if platform.system()!="Darwin":
-	f=open("errors.log","a")
+	f=open("QPlayErrors.log","a")
 	sys.stderr=f
 import shutil
 import os
