@@ -12,13 +12,22 @@ import re
 import youtube_dl
 ydl=None
 player=None
+title=None
 def ydl_url(url):
+	global title
 	global ydl
 	if ydl is None:
 		ydl = youtube_dl.YoutubeDL(params=dict(outtmpl = u"%(title)s [%(extractor)s '%(id)s].%(ext)s", quiet=True, ))
 		ydl.add_default_info_extractors()
 
 	info = ydl.extract_info(url, download=False, process=False)
+	title=info.get('title',None)
+	uploader=info.get('uploader',None)
+	if uploader!=None:
+		if title==None:
+			title=uploader
+		else:
+			title+=" ("+uploader+")"
 	return info['formats'][-1]['url']
 
 def return_url(url):

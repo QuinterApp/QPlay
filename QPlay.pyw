@@ -35,5 +35,7 @@ if len(urls)>0:
 else:
 		utils.alert("No URL given.","Error")
 		sys.exit()
+if sound.title!=None:
+	main.window.SetLabel(sound.title+" - "+application.name+" V"+application.version)
 main.window.Show()
 app.MainLoop()
