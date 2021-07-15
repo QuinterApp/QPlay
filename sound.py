@@ -61,3 +61,16 @@ def stop():
 	player.free()
 	player = None
 	return True
+
+def seek(step):
+	global player
+	pos=player.bytes_to_seconds(player.get_position())
+	pos+=step
+	pos=player.set_position(player.seconds_to_bytes(pos))
+
+def playpause():
+	global player
+	if player.is_playing == True:
+		player.pause()
+	else:
+		player.play()

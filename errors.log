@@ -151,3 +151,225 @@ Traceback (most recent call last):
   File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 51, in OnVoldown
     if sound.player!=None:
 NameError: name 'sound' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 65, in OnPlaypause
+    sound.playpause()
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 73, in playpause
+    if player.is_playing() == True:
+TypeError: 'bool' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 65, in OnPlaypause
+    sound.playpause()
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 73, in playpause
+    if player.is_playing() == True:
+TypeError: 'bool' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 65, in OnPlaypause
+    sound.playpause()
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 73, in playpause
+    if player.is_playing() == True:
+TypeError: 'bool' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 67, in seek
+    pos=player.get_time()
+AttributeError: 'URLStream' object has no attribute 'get_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=self.player.set_time(player.seconds_to_bytes(pos))
+NameError: name 'self' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 71, in OnSeekforward
+    sound.seek(5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\GUI\main.py", line 68, in OnSeekback
+    sound.seek(-5)
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 69, in seek
+    pos=player.set_time(player.seconds_to_bytes(pos))
+AttributeError: 'URLStream' object has no attribute 'set_time'

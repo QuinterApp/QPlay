@@ -24,6 +24,12 @@ class MainGui(wx.Frame):
 		self.Bind(wx.EVT_MENU, self.OnClose, m_close)
 		self.menuBar.Append(menu, "&Application")
 		menu2 = wx.Menu()
+		m_playpause = menu2.Append(-1, "Play/pause (Space)", "playpause")
+		self.Bind(wx.EVT_MENU, self.OnPlaypause, m_playpause)
+		m_seekback = menu2.Append(-1, "Seek back 5 seconds (Left)", "seekback")
+		self.Bind(wx.EVT_MENU, self.OnSeekback, m_seekback)
+		m_seekforward = menu2.Append(-1, "Seek forward 5 seconds (Right)", "seekforward")
+		self.Bind(wx.EVT_MENU, self.OnSeekforward, m_seekforward)
 		m_volup = menu2.Append(-1, "Volume up (up)", "volup")
 		self.Bind(wx.EVT_MENU, self.OnVolup, m_volup)
 		m_voldown = menu2.Append(-1, "Volume down (down)", "voldown")
@@ -34,6 +40,9 @@ class MainGui(wx.Frame):
 		accel.append((wx.ACCEL_ALT, ord('X'), m_close.GetId()))
 		accel.append((wx.ACCEL_NORMAL, wx.WXK_UP, m_volup.GetId()))
 		accel.append((wx.ACCEL_NORMAL, wx.WXK_DOWN, m_voldown.GetId()))
+		accel.append((wx.ACCEL_NORMAL, wx.WXK_LEFT, m_seekback.GetId()))
+		accel.append((wx.ACCEL_NORMAL, wx.WXK_RIGHT, m_seekforward.GetId()))
+		accel.append((wx.ACCEL_NORMAL, wx.WXK_SPACE, m_playpause.GetId()))
 		accel_tbl=wx.AcceleratorTable(accel)
 		self.SetAcceleratorTable(accel_tbl)
 		self.panel.Layout()
@@ -51,6 +60,15 @@ class MainGui(wx.Frame):
 			globals.prefs.volume=round(globals.prefs.volume,1)
 			if sound.player!=None:
 				sound.player.volume=globals.prefs.volume
+
+	def OnPlaypause(self, event=None):
+		sound.playpause()
+
+	def OnSeekback(self, event=None):
+		sound.seek(-5)
+
+	def OnSeekforward(self, event=None):
+		sound.seek(5)
 
 	def OnClose(self, event=None):
 		self.Destroy()
