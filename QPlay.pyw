@@ -1,3 +1,4 @@
+import utils
 import application
 import platform
 import sys
@@ -25,7 +26,14 @@ else:
 urls=[url]
 urls=sound.get_audio_urls(urls)
 if len(urls)>0:
-	a=urls[0]['func'](urls[0]['url'])
-	sound.play_url(a)
+	try:
+		a=urls[0]['func'](urls[0]['url'])
+		sound.play_url(a)
+	except Exception as e:
+		utils.alert("Error while playing. "+str(e),"Error")
+		sys.exit()
+else:
+		utils.alert("No URL given.","Error")
+		sys.exit()
 main.window.Show()
 app.MainLoop()

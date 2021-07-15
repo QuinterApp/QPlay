@@ -61,3 +61,73 @@ Traceback (most recent call last):
   File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 28, in <module>
     a=urls[0]['func']['url'](urls['url'])
 TypeError: 'function' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 36, in <module>
+    utils.alert("No URL given.","Error")
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\utils.py", line 2, in alert
+    dlg = wx.MessageDialog(parent, message, caption, wx.OK)
+NameError: name 'wx' is not defined
+WARNING: Falling back on generic information extractor.
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 30, in <module>
+    a=urls[0]['func'](urls[0]['url'])
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 22, in ydl_url
+    return info['formats'][-1]['url']
+KeyError: 'formats'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 33, in <module>
+    utils.alert("Error while playing "+a['url']+"","Error")
+NameError: name 'a' is not defined
+WARNING: Falling back on generic information extractor.
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 30, in <module>
+    a=urls[0]['func'](urls[0]['url'])
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 22, in ydl_url
+    return info['formats'][-1]['url']
+KeyError: 'formats'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 33, in <module>
+    utils.alert("Error while playing "+a,"Error")
+NameError: name 'a' is not defined
+ERROR: This live event will begin in 6 hours.
+Traceback (most recent call last):
+  File "C:\python39\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\python39\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\python39\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\python39\lib\site-packages\youtube_dl\extractor\youtube.py", line 1713, in _real_extract
+    raise ExtractorError(reason, expected=True)
+youtube_dl.utils.ExtractorError: This live event will begin in 6 hours.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 30, in <module>
+    a=urls[0]['func'](urls[0]['url'])
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\sound.py", line 21, in ydl_url
+    info = ydl.extract_info(url, download=False, process=False)
+  File "C:\python39\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\python39\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\python39\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\python39\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: This live event will begin in 6 hours.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Melody\Dropbox\projects\python\py3\QPlay\QPlay.pyw", line 33, in <module>
+    utils.alert("Error while playing "+a,"Error")
+NameError: name 'a' is not defined
+ERROR: This live event will begin in 6 hours.

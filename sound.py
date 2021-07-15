@@ -47,18 +47,12 @@ def get_audio_urls(urls):
 def play_url(url):
 	global player
 	if player!=None and player.is_playing==True:
-		speak.speak("Stopped")
 		stop()
 		return
-	try:
-		speak.speak("Playing")
-		player = stream.URLStream(url)
-		player.volume = globals.prefs.volume
-		player.play()
-		return True
-	except:
-		speak.speak("Error while playing "+url)
-		return False
+	player = stream.URLStream(url)
+	player.volume = globals.prefs.volume
+	player.play()
+	return True
 
 def stop():
 	global player
