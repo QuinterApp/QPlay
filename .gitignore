@@ -1,0 +1,6 @@
+windist
+macdist
+__pycache__
+*.log
+*.spec
+*.pyc
