@@ -1,2 +1,2 @@
 @echo off
-nuitka --windows-company-name=Mellaquin --windows-product-name=QPlay --windows-file-version=0.1 --windows-product-version=0.1 --windows-file-description=QPlay --standalone --python-flag=no_site --windows-disable-console --output-dir=c:\tempbuild --remove-output QPlay.pyw
+nuitka --windows-company-name=Mellaquin --windows-product-name=QPlay --windows-file-version=0.11 --windows-product-version=0.11 --windows-file-description=QPlay --standalone --python-flag=no_site --windows-disable-console --output-dir=c:\tempbuild --remove-output QPlay.pyw

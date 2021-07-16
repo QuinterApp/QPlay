@@ -1,4 +1,4 @@
 shortname="QPlay"
 name="QPlay"
-version="0.1"
+version="0.11"
 author="Quin and Melody"
