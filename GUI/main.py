@@ -70,16 +70,44 @@ class MainGui(wx.Frame):
 		sound.playpause()
 
 	def OnSeekback(self, event=None):
-		sound.seek(-5)
+		try:
+			sound.seek(-5)
+		except:
+			try:
+				sound.player.set_position(0)
+			except:
+				speak.speak("Cannot seek.")
 
 	def OnSeekback30(self, event=None):
-		sound.seek(-30)
+		try:
+			sound.seek(-30)
+		except:
+			try:
+				sound.player.set_position(0)
+			except:
+				speak.speak("Cannot seek.")
 
 	def OnSeekforward30(self, event=None):
-		sound.seek(30)
+		try:
+			sound.seek(30)
+		except:
+			try:
+				sound.player.set_position(0)
+				if sound.player.is_playing:
+					sound.player.pause()
+			except:
+				speak.speak("Cannot seek.")
 
 	def OnSeekforward(self, event=None):
-		sound.seek(5)
+		try:
+			sound.seek(5)
+		except:
+			try:
+				sound.player.set_position(0)
+				if sound.player.is_playing():
+					sound.player.pause()
+			except:
+				speak.speak("Cannot seek.")
 
 	def OnClose(self, event=None):
 		self.Destroy()
